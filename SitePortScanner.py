@@ -4,13 +4,13 @@ import requests
 from bs4 import BeautifulSoup
 
 
-target = "http://89.165.116.232"
+target = raw_input("Enter Address : ")
 
 
 if ('http' in target):
     print ("Start")
     print ("take long time Scaning 1024 - 65535 Port...")
-    for i in range(8000,65535):
+    for i in range(1024,65535):
         site = target + ":" + str(i)
         try:
             r = requests.get(site,timeout=1)
