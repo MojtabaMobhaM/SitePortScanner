@@ -10,7 +10,7 @@ target = raw_input("Enter Address : ")
 if ('http' in target):
     print ("Start")
     print ("take long time Scaning 1024 - 65535 Port...")
-    for i in range(1024,65535):
+    for i in range(1,10000):
         site = target + ":" + str(i)
         try:
             r = requests.get(site,timeout=1)
