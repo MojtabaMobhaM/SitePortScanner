@@ -9,7 +9,7 @@ target = raw_input("Enter Address : ")
 
 if ('http' in target):
     print ("Start")
-    print ("take long time Scaning 1 - 10000 Port...")
+    print ("take long time Scaning 80 - 10000 Port...")
     for i in range(80,10000):
         site = target + ":" + str(i)
         try:
